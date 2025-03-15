@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <!-- nhung script tu ben ngoai -->
+  <script src="script.js"></script>
+</head>
+<body>
+<!--Cách 3: inLine: Nhúng vào thẻ HTML-->
+<h1>Javascript overview</h1>
+<ul>
+  <li>External</li>
+  <li>Internal</li>
+  <li>InLine</li>
+</ul>
+<button onclick="alert('Hello World')">Tải về</button>
+<button style="position: absolute;"
+        onmouseover="this.style.left = Math.random() * (window.innerWidth - this.offsetWidth) + 'px';
+                 this.style.top = Math.random() * (window.innerHeight - this.offsetHeight) + 'px';">
+  Bấm đi 😜
+</button>
+
+  <!-- cách 2: iternal Nhúng trực tiếp tệp vào fie HTML-->
+<script>
+    alert("Xin chào!")
+</script>
+
+<h2>các ha=mf trong javascript</h2>
+<div id="demo"></div>
+<script>
+  var name = prompt("nhập tên của bạn");
+  var age = prompt("nhập tuổi của bạn");
+  //alert("Xin chao" + name + ", tuoi cua ban la" + age);
+  // document.write("Xin chao" + name + ", tuoi cua ban la" + age);
+  // console.log("Xin chao " + name + ", tuoi cua ban la" + age);
+  document.getElementById("demo").innerHTML = "Xin chao " + name + ", tuoi cua ban la" + age;
+</script>
+</h2>
+</body>
+</html>
+
